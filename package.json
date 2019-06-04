@@ -1,0 +1,54 @@
+{
+  "name": "weather-cli",
+  "version": "0.0.1",
+  "description": "A cli for getting weather information, written in Ink",
+  "main": "lib/cli.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "dev": "npm run build && node lib/cli.js",
+    "start": "node lib/index.js",
+    "prepare": "npm run build"
+  },
+  "author": "Zach Toben",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ztoben/ink-weather-cli.git"
+  },
+  "keywords": [
+    "ink",
+    "cli",
+    "weather"
+  ],
+  "bin": {
+    "weather": "lib/cli.js"
+  },
+  "files": [
+    "lib/"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "ink": "2.2.0",
+    "ink-big-text": "1.0.1",
+    "ink-gradient": "1.0.0",
+    "ink-link": "1.0.0",
+    "ink-select-input": "3.1.1",
+    "ink-text-input": "3.2.0",
+    "node-fetch": "2.6.0",
+    "react": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "husky": "2.3.0",
+    "prettier": "1.17.1",
+    "pretty-quick": "1.11.0"
+  }
+}
