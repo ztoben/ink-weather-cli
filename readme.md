@@ -2,6 +2,8 @@
 
 _A cli weather tool built with [Ink](https://github.com/vadimdemedes/ink), powered by OpenWeatherMap._
 
+![2019-06-04 10 29 02](https://user-images.githubusercontent.com/4007345/58892402-bd04ff00-86b3-11e9-9b70-6f1926cb19b4.gif)
+
 #### Install
 
 ```
